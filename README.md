@@ -1,30 +1,38 @@
-# React + TypeScript + Vite
+# Dummy Website 01
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Banner](https://github.com/sonimohit481/dummy-website-01/blob/main/public/banner.png)
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This repository serves as a practice project for mastering React Router DOM, and TypeScript, and utilizing the GitHub API. The primary focus is on exploring various aspects of React Router, including concepts like Outlet, Link, and NavLink, and demonstrating different routing methods within the application. Additionally, TypeScript is employed for enhanced type safety and improved development experience.
 
-## Expanding the ESLint configuration
+## Deployment
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The website is deployed on Netlify and can be accessed [here](https://dummy-website-01.netlify.app/).
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- React Router DOM: Demonstrates the use of Outlet, Link, NavLink, and various routing techniques.
+- TypeScript: Utilizes TypeScript for improved code quality and better development experience.
+- GitHub API: Fetches user data using the GitHub API, in this case, showcasing data for the repository owner.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## How to Run Locally
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sonimohit481/dummy-website-01.git
+   cd dummy-website-01
+   npm install
+   npm start
+   ```
+
+## About
+This project is designed as a learning resource to enhance skills in React development, React Router, TypeScript, and API integration. Feel free to explore the code, contribute, or use it as a reference for your own projects.
+
+Note: This website uses the GitHub API to fetch user data, specifically targeting the repository owner's information.
+
+Happy coding!
+
+
+
