@@ -6,7 +6,8 @@ import Layout from "./components/Layout.tsx";
 import Home from "./components/home/Home.tsx";
 import About from "./components/about/About.tsx";
 import Contact from "./components/contact/Contact.tsx";
-import User from "./components/user/user.tsx";
+import User from "./components/user/User.tsx";
+import Github, { githubInfoLoader } from "./components/github/Github.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
       {
         path: "/user/:id",
         element: <User />,
+      },
+      {
+        path: "/github",
+        element: <Github />,
+        loader: githubInfoLoader,
       },
     ],
   },
